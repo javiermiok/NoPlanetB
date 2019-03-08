@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutSpalsh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BSplash">
+
+    <ImageView
+        android:id="@+id/ivFondoSplash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivScrimSplash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/scrim"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/ivLogoSpalsh"
+        android:layout_width="159dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/rocketlogo"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvNombreSplash"
+        app:layout_constraintEnd_toStartOf="@+id/ivFondoSplash"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/ivFondoSplash" />
+
+    <TextView
+        android:id="@+id/tvNombreSplash"
+        android:text="@string/tv_logo_splash"
+        app:fontFamily="@font/bromello"
+        app:layout_constraintBottom_toTopOf="@+id/tvLemaSplash"
+        app:layout_constraintEnd_toStartOf="@+id/ivFondoSplash"
+        app:layout_constraintStart_toEndOf="@+id/ivFondoSplash"
+        style="@style/EstiloNombreAppSplash" />
+
+    <TextView
+        android:id="@+id/tvLemaSplash"
+        android:text="@string/tv_lema_splash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/EstiloLemaSplash" />
+</android.support.constraint.ConstraintLayout>
