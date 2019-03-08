@@ -31,10 +31,10 @@ public class BLogin extends AppCompatActivity {
         });
 
         /* 1º Poner a pantalla completa y quitar el ActionBar*/
-        /*if (Build.VERSION.SDK_INT < 16) {
+        if (Build.VERSION.SDK_INT < 16) {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                     WindowManager.LayoutParams.FLAG_FULLSCREEN);
-            *//*Esconder la AppBar*//*
+            /*Esconder la AppBar*/
             getSupportActionBar().hide();
 
         } else {
@@ -44,9 +44,9 @@ public class BLogin extends AppCompatActivity {
             decorView.setSystemUiVisibility(uiOptions);
             // Remember that you should never show the action bar if the
             // status bar is hidden, so hide that too if necessary.
-            *//*Esconder la AppBar*//*
+            /*Esconder la AppBar*/
             getSupportActionBar().hide();
-        }*/
+        }
     }
 
 }
